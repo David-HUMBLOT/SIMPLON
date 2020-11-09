@@ -1,0 +1,14 @@
+
+
+       
+.body{
+    background-color: hotpink;
+    text-align: center;
+    display: flex;
+    
+}
+
+.copyright{
+    position: relative;
+    justify-content: center;
+}

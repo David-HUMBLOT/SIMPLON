@@ -1,0 +1,56 @@
+
+
+
+#image1{
+   
+    background: url(img/image1.jpg);
+    background-size:cover ;
+   
+    height: 30.625rem;
+    
+}
+
+#image2{
+   
+    background: url(img/image2.jpg);
+    background-size:cover ;
+   
+    height: 15rem;
+    background-position-y:-18.75rem ;
+    
+}
+
+#txt{
+    display: flex;
+    margin-top: 6.25rem;
+    
+  color: white;
+}
+
+#badge{
+margin-top: 6.25rem;
+
+}
+
+#position{
+margin-top: 80px;
+
+}
+
+#txtB{
+    font-size: 1.375rem;
+}
+#end{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+      
+
+ 
+
+

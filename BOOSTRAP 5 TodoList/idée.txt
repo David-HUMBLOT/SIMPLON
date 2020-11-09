@@ -1,0 +1,124 @@
+
+
+va servir à sélectionner le dernier tbody de la table. Il n'y en a qu'un seul mais cette méthode permet de le sélectionner directement. On appelle ensuite la méthode append qui permet d'ajouter du code HTML à la suite du code HTML contenu dans la balise. De cette manière, on peut ajouter autant de lignes que l'on veut :
+        JQuery(#maTable > tbody:last).append(<tr>...</tr><tr>...</tr>);
+
+En java script , fonction pour crér un nouveau tableau:
+        new Array();
+
+Stocker dans un tableau tous les éléments d’une liste:    
+        var optionTexts = [];
+        $("ul li").each(function() { optionTexts.push($(this).text()) });
+
+
+
+
+DataTables est un plugin jQuery basé sur les fondements de l’amélioration progressive : accessibilité, sémantique et référencement. Il permet d’organiser un tableau HTML avec pagination, tri et filtres à la volée.
+
+Installation du plugin
+
+Pour mettre en place votre tableau dynamique, commencez par télécharger DataTables. Faites un appel à la librairie jQuery, ainsi qu’au plugin (fichier JS, images et feuilles de style). Ensuite, on va définir la structure de notre tableau HTML. Ici, il s’agit d’un tableau statique, mais vous pouvez bien sûr le générer dynamiquement via PHP en fonction de vos besoins. Pensez à déclarer des balises « th » dans le premier « tr » pour générer des entêtes à votre tableau.
+
+<table id="example">
+    <tr>
+        <th>Rendering engine</th>
+        <th>Browser</th>
+        <th>Platform(s)</th>
+        <th>Engine version</th>
+        <th>CSS grade</th>
+    </tr>
+    <tr>
+        <td>Trident</td>
+        <td>Internet Explorer 4.0</td>
+        <td>Win 95+</td>
+        <td class="center"> 4</td>
+        <td class="center">X</td>
+    </tr>
+    <tr>
+        <td>Trident</td>
+        <td>Internet Explorer 5.0</td>
+        <td>Win 95+</td>
+        <td class="center">5</td>
+        <td class="center">C</td>
+    </tr>
+    ...
+    <tr>
+        <td>Other browsers</td>
+        <td>All others</td>
+        <td>-</td>
+        <td class="center">-</td>
+        <td class="center">U</td>
+    </tr>
+</table>
+
+Votre tableau est en place. Il ne reste plus qu’à dynamiser le tableau avec le code suivant. Si on ne passe aucun paramètre, DataTables va prendre les dix premières données du tableau pour générer la première page, et ainsi de suite.
+
+DataTables est donc un plugin jQuery très pratique pour mettre en forme facilement vos tableaux HTML. Les possibilités d’utilisation et de personnalisation sont immenses ! Tout un tas d’options sont à découvrir sur le site officiel.
+
+
+<tbody>
+				<!--servira pour l ajout de ligne avec JS ET jquery-->
+
+
+				<thead>
+					<tr>
+						<th scope="col">Priorité</th>
+						<th scope="col">Liste des Tâches</th>
+						<th scope="col">Effectuer</th>
+
+					</tr>
+				</thead>
+			<tbody>
+				<tr>
+					<th scope="row"><i class="far fa-star"></i></th>
+					<td>Mark</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>Jacob</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>Jacob</td>
+					<td colspan="2"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>Mark</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><i class="far fa-star"></i></th>
+					<td>Jacob</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><i class="far fa-star"></i></th>
+					<td>Larry the Bird</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>Mark</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"><i class="far fa-star"></i></th>
+					<td>Jacob</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+
+				</tr>
+				<tr>
+					<th scope="row"></th>
+					<td>Jacob</td>
+					<td><input type="checkbox" aria-label="Checkbox for following text input"></td>
+				</tr>
+			</tbody>

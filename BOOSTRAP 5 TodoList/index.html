@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/1decaa985d.js" crossorigin="anonymous"></script>
+	<!-- JS, Popper.js, and jQuery -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>-->
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
+
+
+	<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>-->
+
+	<!--	
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>-->
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+
+	<title>TODOLIST</title>
+</head>
+
+<body class="container justify-content-center">
+
+
+	
+
+	<!--section navbar-->
+	<div class="container-fluid  ">
+		<div class="row ">
+			<div class="col-md-12 ">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fix-top   ">
+
+					<a class="navbar-brand" href="#"> <img class="image-resize5" class="img-responsive "
+							src="img/simplon.jpg" style=width:100% /></a>
+					<div class="collapse navbar-collapse  " id="bs-example-navbar-collapse-1">
+						<ul class="navbar-nav ml-md-auto ">
+
+							<ul class="nav-item dropdown  ">
+								<a class="nav-link dropdown-toggle" href="http://example.com"
+									id="navbarDropdownMenuLink" data-toggle="dropdown">HOME</a>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">action</a> <a class="dropdown-item" href="#">Une
+										autre action</a> <a class="dropdown-item" href="#">Autre a choisi ici</a>
+									<div class="dropdown-divider">
+									</div> <a class="dropdown-item" href="#">Lien séparé</a>
+								</div>
+							</ul>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--fin section navbar-->
+	
+	<!--debut section tache-->
+
+	<div class="container-fluid">
+		<div class="row mt-5 ">
+			<div class="col" id="cadre">
+				<h3 class="text-center">
+					Liste de Vos Tâches
+				</h3>
+				<div class="container pb-5">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col-8">
+							<div id="myDIV" class="header">
+								<input type="text" id="myInput" placeholder="décrire quoi faire mdr">
+
+							</div>
+						</div>
+						<div class="col ">
+
+						</div>
+					</div>
+				</div>
+				<div class="container ">
+					<div class="row">
+						<div class="col">
+
+						</div>
+						<div class="col-8">
+							<p>Priotité:</p>
+						</div>
+						<div class="col "></div>
+					</div>
+				</div>
+				<div class="container ">
+					<div class="row">
+						<div class="col">
+						</div>
+						<div class="col-8">
+							<p>
+								Tâche urgente
+								</button>
+								<!--etoile en jaune difficile ici-->
+								<i class="fas fa-star etoile" onclick="priorité()"></i>
+						</div>
+						<div class="col ">
+
+						</div>
+					</div>
+				</div>
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-7">
+
+						</div>
+						<div class="col-5 mb-5">
+							<span onclick="newElement()" class="addBtn">Ajouter à la liste </span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-2"></div>
+	</div>
+	<!--fin section tache-->
+
+
+	<div class="container-fluid mt-5" id="cadre2">
+
+
+	<div id="listID">
+		<ul id="myUL" class="mt-5 mb-5 " 	 >
+			<li class="barre">
+				<i class="fas fa-star etoile"></i>
+				<input type="checkbox" class="box">
+				Nettoyer écran ordinateur</li>
+
+			<li class="barre">
+				<i class="fas fa-star etoile"></i>
+				<input type="checkbox" class="box">
+				Accheter de l'alcool</li>
+
+			<li class="barre">
+				<i class="fas fa-star etoile"></i>
+				<input type="checkbox" class="box">
+				Apprendre le PHP</li>
+
+			
+
+				
+		</ul>
+
+	
+
+
+	</div>
+	
+	<ul class="pagination" ></ul>
+	
+</div>
+
+
+
+
+
+
+
+
+
+	<!--section tableaux liste des taches non ordonnée-->
+
+	<!--fin section tableaux litse de taches-->
+
+	
+
+
+	<!--pagination
+	<div class="container">
+		<div class="row  position-end">
+			<div class="col-8"></div>
+			<div class="col-md-4">
+				<nav class="pagination-sm">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#">précédent</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">1</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">2</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">3</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">4</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">5</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">Suivant</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	-->
+
+	
+
+
+
+
+</body>
+<script src="JAVA.js"></script>
+</html>
