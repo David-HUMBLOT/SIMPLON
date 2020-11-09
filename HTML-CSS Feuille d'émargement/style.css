@@ -1,0 +1,17 @@
+
+
+
+ciblage-du-tableau td{
+    /* Toutes les balises TD du tableau HTML auront un alignement vertical centré */
+    vertical-align : middle; 
+} 
+
+
+
+#cel1 {
+    border-left-color: white;
+    border-top-color: white;
+    
+
+    
+}

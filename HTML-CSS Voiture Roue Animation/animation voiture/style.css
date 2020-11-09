@@ -1,0 +1,62 @@
+
+
+div.car{
+
+ display : inline-flex;
+ position:block;
+ align-items: flex-start;
+
+}
+
+div.roue{
+
+    margin-left:267px ;
+    display: inline-flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: space-around;
+
+}
+
+div.roueA{
+    margin-top: 180px;
+    margin-left:50 px ;
+    display: flex;
+    position: absolute;
+    align-content: flex-start;
+
+
+}
+
+div.roueB{
+    margin-top:180px;
+    margin-left: 572px;
+    display: flex;
+    position: absolute;
+    align-content: flex-end;
+
+}
+/**ici la virgule permet de donner la proprité 
+de rotation à mes deux class roueA et roueB*/
+ .roueB { 
+
+    -webkit-animation:spin 8s linear infinite;    
+     -moz-animation:spin 10s linear infinite;     
+     animation:spin 4s linear infinite; } 
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } } 
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); }
+
+}
+.roueA { 
+
+    -webkit-animation:spin 8s linear infinite;    
+     -moz-animation:spin 10s linear infinite;     
+     animation:spin 4s linear infinite; } 
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } } 
+    @keyframes spin { 100% { -webkit-transform: rotate(-360deg); 
+    transform:rotate(-360deg); }
+
+}
