@@ -1,0 +1,210 @@
+body{
+    background: rgb(53,228,226);
+background: linear-gradient(7deg, rgba(53,228,226,1) 0%, rgba(40,173,200,1) 54%, rgba(198,26,182,1) 100%);
+
+    display: flex;
+    position: relative;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.form{
+    background-color: white;
+}
+
+.container{
+    background: white;
+    display: block;
+    position: relative;
+    width: 67.625rem;
+    height:78.625rem;
+    border-radius: 2%;
+}
+
+.footer-form{
+    display: flex;
+    background:black;
+    position:relative;
+    width: 67.625rem;
+    height: 6.25rem;
+    border-top-left-radius: 0.9375rem;
+    border-top-right-radius:0.9375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1{
+    margin-top:40px;
+}
+
+.inputFirstName{
+    background-color: rgb(190, 190, 190); width: 340px; height: 50px; border-radius: 13px ; font-size:104%;
+}
+
+.inputLastName{
+    background-color: rgb(190, 190, 190); width: 380px; height: 50px; border-radius: 13px; font-size:104%;
+}
+
+h1{
+    color:white;
+    font-size: 200%;
+}
+
+.text{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 43.75rem;
+    height: 37.5rem;
+    margin-left: 5.625rem;
+    margin-top: 2.5rem;
+    font-size: 150%;
+    color: rgb(65, 64, 64);
+}
+
+.form{
+    display: flex;
+    align-items: center;
+}
+button{
+    background: red;
+    border-radius: 0.75rem;
+    color: white;
+    font-size:95% ;
+    width: 12.5rem;
+    height: 5rem;
+}
+.rad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+    
+}
+.input-name{
+    position: relative;
+}
+.name{
+    display: flex;
+    align-items: center;
+    width: 959.375rem;
+    position: relative;
+}
+
+.champname{
+   margin-left: 3.4375rem;
+   margin-top: 4.375rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+}
+
+.text-gray{
+    color: rgb(105, 105, 105);
+    margin-top: none;
+    font-size: 86%;
+}
+
+.Company{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.imputCompany{
+    background-color: rgb(190, 190, 190); width: 780px; height: 50px; border-radius: 13px; margin-left: 20px; font-size:104%;
+}
+
+.Email{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 1.875rem;
+}
+.inputEmail{
+   background-color: rgb(190, 190, 190); width: 780px; height: 50px; border-radius: 13px; margin-left: 20px; margin-left: 60px; font-size:104%; 
+}
+
+.Phone{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.inputAreaCode{
+    background-color: rgb(190, 190, 190); width: 180px; height: 50px; border-radius: 13px; font-size:104%;
+}
+.inputPhoneNumber{
+    background-color: rgb(190, 190, 190); width: 540px; height: 50px; border-radius: 13px; font-size:104%;
+}
+
+.Subject{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Customer{
+    display: flex;
+    position: relative;
+}
+
+
+/** CODE RECUPERER SUR LE NET ET AJUSTER POUR LES PARAMETRE COULEUR ET DIMENSIONS DU
+BOUTON RADIO**/
+.radio-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px;
+    margin: 10px 0 0;
+    
+  }
+
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+
+  .radio-item label {
+    color: rgb(61, 61, 61);
+    font-weight: normal;
+  }
+
+  .radio-item label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 21px;
+    border-radius: 11px;
+    border: 2px solid #000000;
+    background-color: rgb(226, 226, 226);
+  }
+
+  .radio-item input[type=radio]:checked + label:after {
+    border-radius: 11px;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    content: " ";
+    display: block;
+    background: rgb(15, 221, 15);
+  }
+
+
+  /** CSS Dédié en fonctions des restrictions, des conditions avant toute validation**/
+  input:invalid {
+    border: 1px dashed red;
+  }
+  input:valid {
+    border: 1px solid rgb(37, 45, 149);
+  }
+  /****/
+
+    

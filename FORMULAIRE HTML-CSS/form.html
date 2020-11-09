@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet"  href="form.js">
+    <link rel="stylesheet" media="screen and (min-height:320px )"  href="media1.css">
+    
+</head>
+
+<body>
+
+    <div class="container" style="margin-top: 6%; margin-bottom: 10%; ">
+
+        <div class="footer-form">
+            <h1>EVEN REGISTRATION FORM</h1>
+        </div>
+        <!--method et action a définir pour les actions sur formulaire -->
+        <form method="post" action="traitement.php" class="form" id="FORMULAIRE">
+            <!-- -->
+            <div class="text" id="text">
+                <div class="name">
+                    <div class="div1">
+                        <strong>
+                            <p>Name</p>
+                        </strong>
+                    </div>
+                    <div class="champname">
+                        <!--Ajout name="firstName" pour action sur name et id firstname
+                        ajout de 'required' et ajout de css attribué-->
+                        <input type="text" name="FirstName" id="FirstName"
+                            class="inputFirstName"  
+                            required
+                            pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$"></input>
+
+                        <!--ajout du for pour lié id de input a son label-->
+                        <label class="text-gray" for="FirstName">First Name</label>
+                    </div>
+                        <!---->
+                    <div class="champname">
+                        <!--Ajout name="LastName" pour action sur name et id lastname
+                        ajout de 'required' et ajout de css attribué-->
+
+                        <input type="text" name="LastName" id="LastName"
+                            class="inputLastName"
+                            
+                            required
+                            pattern="^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$">
+                        </input>
+
+                        <!--ajout du for pour lié id de input a son label-->
+
+                        <label class="text-gray" for="LastName">Last Name</label>
+                    </div>
+                </div>
+
+                <div class="Company" >
+                    <strong>
+                        <p>Company</p>
+                    </strong>
+                    <div>
+
+                        <!--Ajout name="company" pour action sur name et id company
+                        ajout de 'required' et ajout de css attribué-->
+
+                        <input type="text " name="Company"
+                            class="imputCompany"
+                            
+                            required
+                            pattern="^[a-z0-9A-ZéèîïÉÈÎÏ][a-z0-9éèêàçîï]+([-'\s][a-z0-9A-ZéèîïÉÈÎÏ][a-z0-9éèêàçîï]+)?$">
+                        </input>
+
+                        <label for="Company"></label>   
+                    </div>
+                </div>
+
+                <div class="Email">
+                    <strong>
+                        <p>Email</p>
+                    </strong>
+                    <div>
+
+                        <input type="email" name="email" id="email"
+                        class="inputEmail"
+                           
+                            required
+                            pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})">
+                        </input>
+
+                        <label for="email"></label>
+                    </div>
+                </div>
+
+                <div class="Phone">
+                    <div style="margin-top: 6%;">
+                        <strong>
+                            <p>Phone</p>
+                        </strong>
+                    </div>
+                    <div class="champname"><input type="number"
+                            class="inputAreaCode"
+                            
+                            required
+                            pattern="^([0-9]+|[-](\d+)){1,5}$"
+                            ></input>
+                        <label class="text-gray">Area Code</label>
+                    </div>
+
+                    <div class="champname"><input type="number"
+                        class="inputPhoneNumber"
+                        placeholder="06-92-00-01-02"
+                            required
+                            pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}">
+                        </input>
+                        <label class="text-gray">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="Subject" >
+                    <strong>
+                        <p>Subject</p>
+                    </strong>
+
+                    <div>
+                        <select type="select" class="text-gray"
+                        class="selectOption"
+                        
+                            style="background-color: rgb(190, 190, 190); width: 786px; height: 52px; border-radius: 13px;  margin-left: 40px;font-size:90%; "required>
+
+                            <option>Choose option</option>
+                            <option>choix 1</option>
+                            <option>Autre choix</option>
+
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="Customer">
+                    <div style="margin-top: 10%;">
+                        <strong>
+                            <p>Are you an existing customer ?</p>
+                        </strong>
+                    </div>
+                </div>
+
+                <div class="rad">
+
+                    <div class="radio-item">
+                        <input type="radio" id="ritema" name="ritem" value="ropt1" required>
+                        <label for="ritema"><strong>Yes</strong></label>
+                    </div>
+
+                    <div class="radio-item" style="margin-right:63%;">
+                        <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                        <label for="ritemb"><strong>No</strong></label>
+                    </div>
+                </div>
+                <div style="margin-top:5% ; ">
+
+                    <!--Ajout type submit et valeur ok-->
+                    <button type="submit">
+                        <!---->
+
+                        <label><strong>REGISTER</strong></label>
+                    </button>
+                </div>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
